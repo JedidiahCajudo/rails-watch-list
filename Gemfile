@@ -73,5 +73,3 @@ gem "sassc-rails"
 gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'cloudinary', '~> 1.16.0'
-# ⚠️ Make sure you use YOUR api key from the Cloudindary dash
-CLOUDINARY_URL=cloudinary://589889796263216:5vBW2kquA6cHt3-30tk7_BOh1oc@duvhzkszt
