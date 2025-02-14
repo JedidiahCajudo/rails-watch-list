@@ -1,8 +1,19 @@
-<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">The Watchlist</div>
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1613210434051-4b00d62d03fb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">The Watchlist</div>
 
 
-<% @lists.each do |list| %>
-<li><%= list.name %></li>
-<% end %>
+<div class="container">
+  <div class="row">
+    <% @lists.each do |list| %>
+      <div class="col-12 col-md-4 mb-3">
+        <div class="card" style="width: 10rem;">
+          <div class="card-body">
+            <li class="list-group-item"><%= list.name %></li>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
 
 <%= link_to "Add List", new_list_path(@lists) %>
